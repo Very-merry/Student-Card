@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300;700&display=swap');
+
+/* *{
+    padding: 0;
+    margin:0;
+}  это если по умолчанию  */
+
+body {background-color: #ffebcd;
+    color: #0f141e;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto Slab', serif;
+
+    /*font:normal 16px 'Roboto', sans-serif; */
+    
+    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+} 
+a {
+    color: black;
+    text-decoration: none; /*без подчеркивания*/
+}
+
+a:hover {text-decoration: underline; /* наведение */
+}
+a:active {color:blue;}
+
+a:visited {color:gray;
+
+}
+
+.img__wrapper {
+    position: relative; /* Позиционирование относительно этого элемента */
+  }
+  
+  .img__name {
+    position: absolute; /* Позиционирование абсолютно ближайшего элемента с position: relative */
+    right:20px;
+    bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+.avatar{ 
+    width: 400px; 
+    border-radius: 30px;
+   box-shadow: 6px 6px 14px rgba(0, 0, 0, 25); 
+}
+.info{
+    display:flex;
+    margin-bottom: 20px;
+}
+@media (max-width: 700px) {
+    .info{
+        text-align: center;
+        display: block;
+    }
+}
+
+
+.info-text{
+    margin-left: 40px;
+}
+.info-text h4{
+margin-bottom: 10px;
+}
+.info-text h1{
+    color: #b22222;
+    }
+
+.info p {
+color: #228b22;
+margin:0;
+font-style: italic;
+font-weight: bold;
+text-decoration: none;
+/*text-transform: uppercase;*/
+/*letter-spacing: 5px;*/
+/*word-spacing: 42px;*/
+}
+/*Box Model*/
+.container {
+    max-width: 750px;
+    margin:auto;
+padding-top: 30px;
+color: #191970
+}
+/*.social {
+background-color:green;
+/*padding: 15px;*/
+/*padding: 15px 40;*/
+/*padding: 15px 20px 25px 30px;*/
+
+/*padding-top: 15px;
+padding-right: 20px;
+padding-bottom: 25px;
+padding-left: 30px;
+margin: 5px;
+
+border: 5px solid red;
+border-bottom-style: dashed;
+border-top-width: 15px;
+border-right-color: blue; 
+} */
+
+/*.box-model > div {   создали 4 одинаковых квадрата > - только 
+    к детям в рамках этого класса прменяется
+    float: left;
+    background: #000;
+height: 200px;
+width:23%;
+border: 4px solid red;
+box-sizing: border-box;  это чтобы не делить на равные части, а чтобы автоматом делилось*/  
+
+
+.bg-green {
+    background-color: #e5ffe7;
+    padding: 20px 30 px;
+    
+}
+    
+.bg-red{
+    background-color: #e9967a;
+    
+    
+}
+.bg-blue{
+    background-color: #87ceeb;}
+      
+    
+.card {
+    padding: 20px;
+    /* background-color: red; */
+    margin-bottom: 20px;
+    margin-left: -10px;
+    border-radius: 20px;
+    
+    
+}
+.card h2 {
+    margin-bottom: 5px
+}
+
+.lists li {
+    color:#663399;
+    list-style-type:square;
+}
+.list {
+    /*padding: 0px;
+    list-style: none;*/
+    padding:0 15px;
+    
+}
+.list li {
+    color: #663399;
+margin-bottom: 10px;
+/*border-bottom: 1px solid grey;*/
+}
+.table{
+    width:100%;
+    color: #663399;
+}
+.table td{
+   padding-bottom: 10px;
+}
+/* .table td:nth-child(1) ,.table td:nth-child(2)
+{color:gray;} */
+.table tr:nth-child(even) {background-color: #8fbc8f;}
+
+.contact h2{
+    text-align: center;
+    color: #228b22;
+}
+
+.row:nth-child(1) ,.row:nth-child(2)
+{color:#000;} 
+
+.form-group label{
+    display: block;
+    font-size: 15px;
+    color: #0f141e;
+    margin-left: 15px;
+}
+.form-group input,
+.form-group textarea{
+    width: 100% ;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;  
+    margin-left: 15px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 25px;
+   
+}
+.row > .form-group{
+    width: 50%;
+}
+.row > .form-group:first-child{
+margin-right: 50px;
+}
+
+
+.btn {
+    background-color: #cd853f;
+    padding: 15px 20px;
+    color: #000;
+    border: none;
+    font-family: inherit;
+    cursor:cell;
+
+}
+.btn:hover {
+    opacity: 0.9;
+}
+/* Position */
+
+/*.position {
+    position: relative;
+border: 4px solid black;
+margin-top: 40px;
+padding: 20px;
+height: 200px;
+}
+.box{
+    position: absolute;
+top:0;
+left:0px;
+bottom: 150px;
+left: 0px; 
+
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+} */
